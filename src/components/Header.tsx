@@ -39,42 +39,10 @@ const Header = () => {
           </li>
           <li>
             <button
-              onClick={() => scrollToSection('packages')}
-              className="text-[#1E1E1E] text-xs md:text-sm font-light tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
-            >
-              Packages
-            </button>
-          </li>
-          <li>
-            <button
               onClick={() => scrollToSection('about')}
               className="text-[#1E1E1E] text-xs md:text-sm font-light tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
             >
-              About Us
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => scrollToSection('blogs')}
-              className="text-[#1E1E1E] text-xs md:text-sm font-light tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
-            >
-              Blogs
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => scrollToSection('testimonials')}
-              className="text-[#1E1E1E] text-xs md:text-sm font-light tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
-            >
-              Testimonial
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="text-[#1E1E1E] text-xs md:text-sm font-light tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
-            >
-              Contact
+              About
             </button>
           </li>
           <li>
@@ -83,6 +51,14 @@ const Header = () => {
               className="text-[#1E1E1E] text-xs md:text-sm font-light tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
             >
               Gallery
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="text-[#1E1E1E] text-xs md:text-sm font-light tracking-[0.2em] uppercase hover:opacity-60 transition-opacity"
+            >
+              Contact
             </button>
           </li>
         </ul>
