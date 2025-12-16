@@ -27,8 +27,9 @@ const ImageDisplay = ({ src, alt, onLoad, onError, fadeOut = false }: ImageDispl
     <div className="relative w-full h-full flex items-center justify-center bg-black">
       {/* Loading State */}
       {isLoading && !hasError && (
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
           <div className="w-12 h-12 border-4 border-white/20 border-t-white rounded-full animate-spin" />
+          <p className="text-white/40 text-sm">Loading image...</p>
         </div>
       )}
 
@@ -61,7 +62,9 @@ const ImageDisplay = ({ src, alt, onLoad, onError, fadeOut = false }: ImageDispl
         alt={alt}
         onLoad={handleLoad}
         onError={handleError}
-        loading="lazy"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
         className={`max-w-full max-h-full w-auto h-auto object-contain carousel-transition gpu-accelerated ${
           isLoading || hasError || fadeOut ? 'opacity-0' : 'opacity-100'
         }`}
